@@ -6,10 +6,11 @@
 class Rectangle
 {
 public:
-	int width;
-	int height;
 	void draw();
 	int getArea();
+private:
+	int width;
+	int height;
 };
 
 #endif // !ADVANCED_RECTANGLE_H
