@@ -3,7 +3,14 @@
 
 using namespace std;
 
-void Rectangle::draw() 
+Rectangle::Rectangle(int width, int height)
+{
+	cout << "Constructing a Rectangle" << endl;
+	setWidth(width);
+	setHeight(height);
+}
+
+void Rectangle::draw()
 {
 	cout << "Drwaing a rectangle" << endl;
 	cout << "Dimensions: " << width << ", " << height << endl;
