@@ -10,6 +10,12 @@ Rectangle::Rectangle(int width, int height)
 	setHeight(height);
 }
 
+Rectangle::Rectangle(int width, int height, string color) : Rectangle(width,height)
+{
+	cout << "constructing with a Rectangle color";
+	this->color = color;
+}
+
 void Rectangle::draw()
 {
 	cout << "Drwaing a rectangle" << endl;
