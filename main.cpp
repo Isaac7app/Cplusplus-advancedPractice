@@ -6,7 +6,12 @@ using namespace std;
 
 int main()
 {
-    Rectangle rectangle{10, 20, "blue"};
+    Rectangle first{ 10, 20 };
+    Rectangle second{10, 20};
+
+    cout << Rectangle::getObjectCount() << endl;
+
+    
    
 
     return 0;
