@@ -12,8 +12,13 @@ Rectangle::Rectangle(int width, int height)
 
 Rectangle::Rectangle(int width, int height, string color) : Rectangle(width,height)
 {
-	cout << "constructing with a Rectangle color";
+	cout << "constructing with a Rectangle color" << endl;
 	this->color = color;
+}
+
+Rectangle::~Rectangle()
+{
+	cout << "Descructor is called";
 }
 
 void Rectangle::draw()

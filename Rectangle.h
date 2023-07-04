@@ -13,6 +13,7 @@ public:
 	Rectangle() = default;
 	Rectangle(int width, int height);
 	Rectangle(int width, int height, string color);
+	~Rectangle();
 	void draw();
 	int getArea();
 	int getWidth();
