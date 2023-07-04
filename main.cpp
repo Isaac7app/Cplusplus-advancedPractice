@@ -6,8 +6,9 @@ using namespace std;
 
 int main()
 {
-    const Rectangle rectangle;
-
+    
+    auto rectangle = make_unique<Rectangle>(10, 20);
+    rectangle->draw();
 
     return 0;
 }
