@@ -22,18 +22,18 @@ Rectangle::~Rectangle()
 	cout << "Descructor is called";
 }
 
-void Rectangle::draw()
+void Rectangle::draw() const
 {
 	cout << "Drwaing a rectangle" << endl;
 	cout << "Dimensions: " << width << ", " << height << endl;
 }
 
-int Rectangle::getArea()
+int Rectangle::getArea() const
 {
 	return width * height;
 }
 
-int Rectangle::getWidth()
+int Rectangle::getWidth() const
 {
 	return width;
 }
@@ -46,7 +46,7 @@ void Rectangle::setWidth(int width)
 
 }
 
-int Rectangle::getHeight()
+int Rectangle::getHeight() const
 {
 	return height;
 }

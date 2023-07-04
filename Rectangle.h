@@ -15,13 +15,12 @@ public:
 	Rectangle(int width, int height, string color);
 	~Rectangle();
 
-	void draw();
-	int getArea();
+	void draw() const;
+	int getArea() const;
+	int getWidth() const;
+	int getHeight() const;
 
-	int getWidth();
 	void setWidth(int width);
-
-	int getHeight();
 	void setHeight(int height);
 
 	static int getObjectCount();
